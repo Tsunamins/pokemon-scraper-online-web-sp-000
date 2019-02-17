@@ -30,7 +30,7 @@ class Pokemon
     @type = find_db[2]
     @db = db
     
-    add_pokemon = self.new(@id, @name, @type, @db)
+    add_pokemon = self.new
     
     
     # new = self.new(id: find_db[0], name: find_db[1], type: find_db[2], db: db)
