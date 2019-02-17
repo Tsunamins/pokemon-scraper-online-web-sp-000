@@ -20,7 +20,7 @@ class Pokemon
   end 
   
   def self.find(id, db)
-    find_db = db.execute("SELECT pokemon.id, pokemon.name, pokemon.type FROM pokemon WHERE pokemon.id = ?", id, name, type).flatten
+    find_db = db.execute("SELECT pokemon.id, pokemon.name, pokemon.type FROM pokemon WHERE pokemon.id = ?", id).flatten
     binding.pry
     
     
